@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.containter{
+    /* border: 2px solid red; */
+    border-radius: 50px;
+    width: 900px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;  
+    box-shadow: 5px 5px 5px 5px rgb(81, 65, 65);   
+}
+
+.response-area{
+    font-size: 60px;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 50px;
+}
+
+.buttonbox{
+    /* border: 2px solid red; */
+    margin-top: 80px;
+    text-align: center;
+    
+}
+
+.buttonbox button{
+    height: 50px;
+    width: 150px;
+    margin: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    
+}
+
+.buttonbox button:hover{
+    background: linear-gradient(to right, #dc9403, #ba3b3b);
+    color: white;
+}
+
+.response-area p{
+    font-size: 40px;
+}
