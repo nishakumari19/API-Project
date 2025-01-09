@@ -12,22 +12,23 @@
 </head>
 
 <body>
-  <div class="containter">
+  <div class="bodybox">
+    <div class="containter">
+      <div class="response-area">
+        <p>
+          😄<%=content%>
+        </p>
+      </div>
 
-    <div class="response-area">
-      <p>
-        😄<%=content%>
-      </p>
+      <div class="buttonbox">
+        <button type="submit" id="programmingjoke"
+          onclick="window.location.href='/programmingjoke'">Programming</button>
+        <button type="submit" id="miscjoke" onclick="window.location.href='/miscjoke'">Misc</button>
+        <button type="submit" id="singlejoke" onclick="window.location.href='/singlejoke'">Single</button>
+        <button type="submit" id="twopartjoke" onclick="window.location.href='/twopartjoke'">Two Part</button>
+        <button type="submit" id="punjoke" onclick="window.location.href='/punjoke'">Pun</button>
+      </div>
     </div>
-
-    <div class="buttonbox">
-      <button type="submit" id="programmingjoke" onclick="window.location.href='/programmingjoke'">Programming</button>
-      <button type="submit" id="miscjoke" onclick="window.location.href='/miscjoke'">Misc</button>
-      <button type="submit" id="singlejoke" onclick="window.location.href='/singlejoke'">Single</button>
-      <button type="submit" id="twopartjoke" onclick="window.location.href='/twopartjoke'">Two Part</button>
-      <button type="submit" id="punjoke" onclick="window.location.href='/punjoke'">Pun</button>
-    </div>
-
   </div>
 </body>
 

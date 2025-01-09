@@ -1,36 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
-.containter{
+.bodybox {
+    /* border: 2px solid red; */
+    width: 1532px;
+    height: 692px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.containter {
     /* border: 2px solid red; */
     border-radius: 50px;
     width: 900px;
     height: 600px;
-    margin-top: 50px;
-    margin-left: 350px;
     display: flex;
-    flex-direction: column;  
-    box-shadow: 5px 5px 5px 5px rgb(81, 65, 65);   
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px rgb(81, 65, 65);
 }
 
-.response-area{
+.response-area {
     font-size: 60px;
     /* border: 2px solid red; */
     text-align: center;
     margin-top: 50px;
 }
 
-.buttonbox{
+.buttonbox {
     /* border: 2px solid red; */
     margin-top: 80px;
     text-align: center;
-    
+
 }
 
-.buttonbox button{
+.buttonbox button {
     height: 50px;
     width: 150px;
     margin: 15px;
@@ -38,14 +46,73 @@
     cursor: pointer;
     border: none;
     font-size: 20px;
-    
+
 }
 
-.buttonbox button:hover{
+.buttonbox button:hover {
     background: linear-gradient(to right, #dc9403, #ba3b3b);
     color: white;
 }
 
-.response-area p{
+.response-area p {
     font-size: 40px;
 }
+
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .bodybox {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .containter {
+        width: 90%;
+        height: auto;
+        box-shadow: 3px 3px 5px 2px rgb(81, 65, 65);
+    }
+
+    .response-area {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .response-area p {
+        font-size: 30px;
+    }
+
+    .buttonbox button {
+        height: 45px;
+        width: 120px;
+        font-size: 18px;
+        margin: 10px;
+    }
+}
+
+/* Media Query for Very Small Screens */
+@media (max-width: 480px) {
+    .containter {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 2px 2px 4px 1px rgb(81, 65, 65);
+    }
+
+    .response-area {
+        font-size: 30px;
+    }
+
+    .response-area p {
+        font-size: 20px;
+    }
+
+    .buttonbox button {
+        height: 40px;
+        width: 100px;
+        font-size: 16px;
+        margin: 8px;
+    }
+}
+
