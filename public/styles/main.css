@@ -63,32 +63,46 @@
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .bodybox {
-        width: 100%;
-        height: auto;
+        width: 477px;
+        height: 673px;
         flex-direction: column;
         padding: 10px;
     }
 
     .containter {
-        width: 90%;
-        height: auto;
+        width: 95%;
+        height: 800px;
         box-shadow: 3px 3px 5px 2px rgb(81, 65, 65);
     }
 
     .response-area {
-        font-size: 40px;
-        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        width: 95%;
+        height: 250px;
+        font-size: 20px;
+        margin-top:20px;
     }
 
     .response-area p {
         font-size: 30px;
     }
 
+    .buttonbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 5px; 
+        
+    }
+
     .buttonbox button {
         height: 45px;
-        width: 120px;
+        width: 80px;
         font-size: 18px;
-        margin: 10px;
+        margin: 5px;
+        flex: 250px;
     }
 }
 
@@ -96,6 +110,7 @@
 @media (max-width: 480px) {
     .containter {
         width: 100%;
+        height: auto;
         border-radius: 20px;
         box-shadow: 2px 2px 4px 1px rgb(81, 65, 65);
     }
