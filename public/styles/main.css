@@ -68,6 +68,8 @@
         height: 673px;
         flex-direction: column;
         padding: 10px;
+    }
+}
 =======
 /* Large screens (desktops, laptops) */
 @media screen and (min-width: 1024px) {
