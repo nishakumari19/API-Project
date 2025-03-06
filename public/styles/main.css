@@ -1,52 +1,51 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
 .bodybox {
-    /* border: 2px solid red; */
-    width: 1532px;
-    height: 692px;
+    /* border: 1px solid red; */
+    width: 99%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
-
 .containter {
-    /* border: 2px solid red; */
     border-radius: 50px;
-    width: 900px;
-    height: 600px;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px 5px rgb(81, 65, 65);
+    padding: 20px;
 }
 
 .response-area {
-    font-size: 60px;
-    /* border: 2px solid red; */
+    font-size: 3vw;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .buttonbox {
-    /* border: 2px solid red; */
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: center;
-
 }
 
 .buttonbox button {
     height: 50px;
     width: 150px;
-    margin: 15px;
+    margin: 10px;
     border-radius: 15px;
     cursor: pointer;
     border: none;
-    font-size: 20px;
-
+    font-size: 18px;
+    transition: all 0.3s ease;
 }
 
 .buttonbox button:hover {
@@ -55,64 +54,86 @@
 }
 
 .response-area p {
-    font-size: 40px;
+    font-size: 3vw;
 }
 
+/* Media Queries */
 
-
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-    .bodybox {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        padding: 10px;
+/* Large screens (desktops, laptops) */
+@media screen and (min-width: 1024px) {
+    .response-area {
+        font-size: 50px;
     }
 
+    .response-area p {
+        font-size: 50px;
+    }
+
+    .buttonbox button {
+        font-size: 20px;
+        width: 180px;
+        height: 55px;
+    }
+}
+
+/* Tablets and medium screens */
+@media screen and (max-width: 1024px) {
+    .response-area {
+        font-size: 40px;
+    }
+
+    .response-area p {
+        font-size: 35px;
+    }
+
+    .buttonbox button {
+        font-size: 18px;
+        width: 160px;
+        height: 50px;
+    }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
     .containter {
-        width: 90%;
+        width: 95%;
         height: auto;
-        box-shadow: 3px 3px 5px 2px rgb(81, 65, 65);
+        padding: 15px;
     }
 
     .response-area {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 20px;
     }
 
     .response-area p {
-        font-size: 30px;
+        font-size: 28px;
+    }
+
+    .buttonbox {
+        margin-top: 30px;
     }
 
     .buttonbox button {
+        font-size: 16px;
+        width: 140px;
         height: 45px;
-        width: 120px;
-        font-size: 18px;
-        margin: 10px;
     }
 }
 
-/* Media Query for Very Small Screens */
-@media (max-width: 480px) {
-    .containter {
-        width: 100%;
-        border-radius: 20px;
-        box-shadow: 2px 2px 4px 1px rgb(81, 65, 65);
-    }
-
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
     .response-area {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .response-area p {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .buttonbox button {
+        font-size: 14px;
+        width: 120px;
         height: 40px;
-        width: 100px;
-        font-size: 16px;
-        margin: 8px;
     }
 }
-

@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 
 app.get("/", async (req, res) => {
-    res.render("index.ejs", { content: "Wanna hear Joke's" })
+    res.render("index.ejs", { content: "Wanna hear some jokes?" })
 });
 
 
